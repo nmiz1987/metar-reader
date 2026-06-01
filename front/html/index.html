@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>METAR Reader</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>&#9928; METAR Reader</h1>
+    <p>Type an airport code and get a plain-English weather report</p>
+  </header>
+
+  <div class="search-card">
+    <div class="search-row">
+      <input id="codeInput" type="text" maxlength="4" placeholder="KHIO" autocomplete="off" spellcheck="false" />
+      <button onclick="go()">Get Weather</button>
+    </div>
+    <div class="examples">
+      <b>Try:</b>
+      <button class="pill" onclick="quick('KHIO')">KHIO</button>
+      <button class="pill" onclick="quick('KLAX')">KLAX</button>
+      <button class="pill" onclick="quick('KJFK')">KJFK</button>
+      <button class="pill" onclick="quick('KORD')">KORD</button>
+      <button class="pill" onclick="quick('KDFW')">KDFW</button>
+      <button class="pill" onclick="quick('EGLC')">EGLC</button>
+      <button class="pill" onclick="quick('KSEA')">KSEA</button>
+    </div>
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    Fetching weather data&hellip;
+  </div>
+  <div class="error-card" id="error"></div>
+  <div id="results"></div>
+
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

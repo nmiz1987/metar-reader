@@ -1,0 +1,13 @@
+{
+  "name": "metar-reader",
+  "version": "1.0.0",
+  "description": "A web app that fetches and decodes METAR aviation weather reports into plain English",
+  "main": "back/server.js",
+  "scripts": {
+    "start": "node back/server.js"
+  },
+  "keywords": ["metar", "aviation", "weather"],
+  "author": "Netanel Mizrahi",
+  "license": "MIT",
+  "type": "commonjs"
+}
