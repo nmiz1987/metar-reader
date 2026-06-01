@@ -2,8 +2,6 @@
 
 A lightweight web app that fetches live METAR aviation weather reports and decodes them into plain English — no dependencies, pure Node.js.
 
-![METAR Reader screenshot](https://i.imgur.com/placeholder.png)
-
 ## What is METAR?
 
 METAR (Meteorological Aerodrome Report) is the standard format used worldwide for reporting current weather conditions at airports. This app translates those compact, cryptic strings into human-readable summaries with individual cards for temperature, wind, visibility, sky conditions, dewpoint, and pressure.
