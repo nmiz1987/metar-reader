@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": ["Bash(npm install *)", "Bash(npx vite *)", "Bash(npm run lint)", "Read(~/.zshrc)"],
+    "deny": ["Bash(curl:*)", "Read(./.env)", "Read(./.env.*)", "Read(./secrets/**)"],
+    "defaultMode": "acceptEdits",
+    "additionalDirectories": ["../../"]
+  },
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "OTEL_METRICS_EXPORTER": "none"
+  },
+  "todoFeatureEnabled": true
+}
